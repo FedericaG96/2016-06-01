@@ -87,6 +87,11 @@ public class Airline {
 	public void setActive(String active) {
 		this.active = active;
 	}
+
+	@Override
+	public String toString() {
+		return String.format("%s: %s", airlineId, name);
+	}
 	
 	
 

@@ -22,7 +22,7 @@ import java.util.concurrent.Executor;
 
 public class DBConnect {
 	
-	private final static String jdbcURL = "jdbc:mysql://localhost/openflights?user=root&password=root";
+	private final static String jdbcURL = "jdbc:mysql://localhost/openflights?useTimezone=true&serverTimezone=UTC&user=root&password=Federi22!";
 
 	private static class PersistentConnection implements Connection {
 

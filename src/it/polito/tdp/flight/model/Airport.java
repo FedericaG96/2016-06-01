@@ -1,6 +1,8 @@
 package it.polito.tdp.flight.model;
 
-public class Airport {
+import com.javadocmd.simplelatlng.LatLng;
+
+public class Airport implements Comparable<Airport>{
 	
 	private int airportId ;
 	private String name ;
@@ -117,7 +119,18 @@ public class Airport {
 	public void setTz(String tz) {
 		this.tz = tz;
 	}
+
+	@Override
+	public String toString() {
+		return String.format("%s: %s", airportId, name);
+	}
+
+	@Override
+	public int compareTo(Airport other) {
+		return this.airportId-other.airportId;
+	}
 	
 	
+
 
 }

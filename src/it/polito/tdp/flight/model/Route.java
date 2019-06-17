@@ -12,6 +12,8 @@ public class Route {
 	private int stops ;
 	private String equipment ;
 	
+	
+	
 	public Route(String airline, int airlineId, String sourceAirport, int sourceAirportId, String destinationAirport,
 			int destinationAirportId, String codeshare, int stops, String equipment) {
 		super();
